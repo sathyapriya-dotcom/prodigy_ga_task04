@@ -1,0 +1,117 @@
+*{
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:rgb(196, 116, 212);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+}
+
+.app{
+  width:380px;
+  background:white;
+  backdrop-filter:blur(12px);
+  border-radius:28px;
+  padding:20px;
+  text-align:center;
+  color: black;
+}
+
+h1{
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+.sub{
+  font-size:12px;
+  opacity:.85;
+}
+
+canvas{
+  width:100%;
+  height:280px;
+  margin:15px 0;
+  border-radius:18px;
+  background:black;
+}
+
+input[type=file]{
+  width:100%;
+  margin:10px 0;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:14px;
+  color:white;
+  font-weight:600;
+  background:black;
+  cursor:pointer;
+}
+
+.info{
+  font-size:11px;
+  margin-top:8px;
+  opacity:.85;
+}
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+
+  body{
+    padding:12px;
+  }
+
+  .app{
+    width:100%;
+    max-width:340px;
+    border-radius:20px;
+    padding:16px;
+  }
+
+  h1{
+    font-size:20px;
+  }
+
+  .sub{
+    font-size:11px;
+  }
+
+  canvas{
+    height:220px;
+    border-radius:14px;
+  }
+
+  button{
+    padding:14px;
+    font-size:15px;
+  }
+
+  input[type=file]{
+    font-size:14px;
+  }
+}
+
+/* 📱 VERY SMALL PHONES */
+@media (max-width: 360px) {
+
+  .app{
+    max-width:300px;
+    padding:14px;
+  }
+
+  canvas{
+    height:200px;
+  }
+
+  h1{
+    font-size:18px;
+  }
+}
